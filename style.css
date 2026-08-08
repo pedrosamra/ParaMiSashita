@@ -111,7 +111,7 @@ font-size:70px;
 
 margin-top:60px;
 
-animation:mover 5s linear infinite;
+animation:mover 8s linear infinite;
 
 }
 
@@ -159,30 +159,22 @@ transform:translateX(-180px);
     }
 }
 
-.galeria{
-
-display:flex;
-
-flex-direction:column;
-
-gap:20px;
-
-margin:30px 0;
-
+.galeria {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 15px;
+width: 90%;
+max-width: 500px;
+margin: 25px auto;
 }
 
-.foto{
-    width: 220px;
-    height: 150px;
-    border-radius: 20px;
-    background: #ffc9dd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff4f8a;
-    box-shadow: 0 10px 20px rgba(0,0,0,.15);
+.foto {
+width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 20px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+display: block;
 }
 
 .nieve{
