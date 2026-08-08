@@ -127,15 +127,22 @@ document.body.innerHTML = `
 
 <div class="pantalla">
 
-<h1>📸 Nuestros recuerdos</h1>
+<h1>📸 Nuestros recuerdos ❤️</h1>
+
+<p>
+Algunos de nuestros momentos que quiero guardar para siempre...
+</p>
 
 <div class="galeria">
 
-<div class="foto">❤️ Foto 1</div>
-
-<div class="foto">❤️ Foto 2</div>
-
-<div class="foto">❤️ Foto 3</div>
+<img class="foto" src="Imagenes/IMG-20250627-WA0018.jpg">
+<img class="foto" src="Imagenes/IMG-20250627-WA0030.jpg">
+<img class="foto" src="Imagenes/IMG-20250709-WA0018.jpg">
+<img class="foto" src="Imagenes/IMG-20250922-WA0020.jpg">
+<img class="foto" src="Imagenes/IMG-20250920-WA0089.jpg">
+<img class="foto" src="Imagenes/IMG-20250922-WA0017.jpg">
+<img class="foto" src="Imagenes/IMG-20250922-WA0008.jpg">
+<img class="foto" src="Imagenes/IMG-20250922-WA0004.jpg">
 
 </div>
 
