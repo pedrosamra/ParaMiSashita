@@ -32,9 +32,7 @@ risas, besitos, abrazos y muchos sueños por cumplir.
 </p>
 
 <div class="carro">
-
-🚗
-
+    🚙
 </div>
 
 </div>
