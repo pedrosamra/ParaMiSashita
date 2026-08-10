@@ -2,6 +2,20 @@ const boton = document.getElementById("comenzar");
 
 boton.addEventListener("click", iniciarViaje);
 
+function cambiarPantalla(funcionDestino){
+
+    document.body.classList.add("transicion");
+
+    setTimeout(() => {
+
+        document.body.classList.remove("transicion");
+
+        funcionDestino();
+
+    }, 800);
+
+}
+
 function iniciarViaje(){
 
 document.body.innerHTML=`
@@ -96,10 +110,8 @@ paisajes hermosos y recuerdos que quiero seguir creando contigo.
 
 </p>
 
-<button onclick="mostrarFotosMerida()">
-
-Ver nuestros recuerdos 📸
-
+<button onclick="cambiarPantalla(mostrarFotosMerida)">
+    Ver nuestros recuerdos 📸
 </button>
 
 </div>
@@ -146,10 +158,8 @@ Algunos de nuestros momentos que quiero guardar para siempre...
 
 </div>
 
-<button onclick="terceraParada()">
-
-Continuar 🚗
-
+<button onclick="cambiarPantalla(terceraParada)">
+    Continuar 🚗
 </button>
 
 </div>
@@ -189,10 +199,8 @@ Quiero seguir descubriendo el mundo a tu lado.
 
 </p>
 
-<button onclick="cuartaParada()">
-
-Continuemos nuestro viaje 🚗
-
+<button onclick="cambiarPantalla(cuartaParada)">
+    Continuemos nuestro viaje 🚗
 </button>
 
 </div>
@@ -234,10 +242,8 @@ Y quiero seguir construyendo miles de recuerdos contigo.
 
 </p>
 
-<button onclick="finalViaje()">
-
-Última sorpresa 🎁
-
+<button onclick="cambiarPantalla(finalViaje)">
+    Última sorpresa 🎁
 </button>
 
 </div>
