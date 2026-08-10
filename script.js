@@ -287,14 +287,72 @@ es seguir construyendo una vida contigo.
 
 </p>
 
-<button onclick="location.reload()">
+<div class="botones-final">
 
-🔄 Volver a comenzar
+    <button onclick="aceptarViaje()" class="btn-si">
+        ❤️ SÍ
+    </button>
 
-</button>
+    <button onclick="rechazarViaje()" class="btn-no">
+        😢 NO
+    </button>
+
+</div>
 
 </div>
 
 `;
+
+}
+
+function aceptarViaje(){
+
+    document.body.innerHTML = `
+
+    <div class="pantalla">
+
+        <h1>🥹❤️ Sabía que dirías que sí</h1>
+
+        <p>
+        Entonces prepárate, Habibi...
+
+        Porque esto apenas comienza.
+
+        Quiero seguir viajando,
+        riendo,
+        conociendo lugares
+        y creando recuerdos contigo.
+
+        Te amo ❤️
+        </p>
+
+    </div>
+
+    `;
+
+}
+
+
+function rechazarViaje(){
+
+    document.body.innerHTML = `
+
+    <div class="pantalla">
+
+        <h1>🥺💔 ¿Estás segura?</h1>
+
+        <p>
+        Creo que ese botón se equivocó...
+
+        Inténtalo otra vez, Habibi ❤️
+        </p>
+
+        <button onclick="finalViaje()">
+            ❤️ Volver a intentarlo
+        </button>
+
+    </div>
+
+    `;
 
 }
