@@ -232,3 +232,19 @@ max-width: 300px;
         opacity:0;
     }
 }
+
+/* Transición entre paradas */
+
+.transicion {
+    animation: desvanecer 0.8s ease forwards;
+}
+
+@keyframes desvanecer {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
